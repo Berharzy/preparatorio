@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário de Estudo Semanal</title>
+    <link rel="stylesheet" href="./style/calendar.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Estudo Semanal</h1>
+        <div class="calendar">
+            <div class="day" data-day="1">
+                <h2>Segunda-feira</h2>
+                <p><a href="portugues.html">Português</a></p>
+                <p><a href="./data/estatuto_servidor_sg-rj.pdf">Estatuto do Servidor (Lei 1.416/22)</a></p>
+            </div>
+            <div class="day" id="data" data-day="2">
+                <h2>Terça-feira</h2>
+                <p>Informática</p>
+                <p>Arquivologia</p>
+            </div>
+            <div class="day" data-day="3">
+                <h2>Quarta-feira</h2>
+                <p>Lei Orgânica do Município</p>
+                <p>Fundação de Assistência à Saúde dos Servidores (Lei 1.424/22)</p>
+            </div>
+            <div class="day" data-day="4">
+                <h2>Quinta-feira</h2>
+                <p>Revisão</p>
+            </div>
+            <div class="day" data-day="5">
+                <h2>Sexta-feira</h2>
+                <p>Atualidades</p>
+                <p>Português</p>
+            </div>
+            <div class="day" data-day="6">
+                <h2>Sábado</h2>
+                <p>Matemática</p>
+                <p><a href="./data/lei_complementar_015_2011.pdf">Lei Complementar (015/2011)</a></p>
+            </div>
+            <div class="day" data-day="0">
+                <h2>Domingo</h2>
+                <p>Revisão geral</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Pega o dia da semana atual (0 = domingo, 1 = segunda-feira, etc.)
+        const today = new Date().getDay();
+
+        // Seleciona todos os elementos com a classe 'day'
+        const days = document.querySelectorAll('.day');
+
+        // Adiciona a classe 'today' ao dia atual
+        days.forEach(day => {
+            if (day.getAttribute('data-day') == today) {
+                day.classList.add('today');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.day {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.day:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+}
+
+/* Destaque para o dia atual */
+.today {
+    background-color: #5ef03a63;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.today h2 {
+    color: #2b8a28;
+}
+
+@media (max-width: 768px) {
+    .calendar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .calendar {
+        grid-template-columns: 1fr;
+    }
+}

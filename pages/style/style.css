@@ -1,0 +1,257 @@
+h1{
+
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+body {
+
+        background-color: #f1f1f1;
+
+
+}
+
+main{
+  
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+ /*   display: flex; */
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+imgCenter{
+       
+        top: 0;
+        left: 0;
+        background-color: #1659bf;
+        border-radius: .7rem;
+        border-color: #dbdada;
+        border-style: solid;
+        padding: 1rem;
+        width: 100%;
+        height: 10rem;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        z-index: 1000;
+
+}
+
+
+*{
+
+    font-family: 'Roboto', Segoe UI;
+}
+
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.menu-item a:hover {
+    background-color: #575757;
+}
+
+.dropdown-toggle::after {
+    content: ' ▼';
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid #575757;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu li a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #575757;
+}
+
+
+.card-container {
+    /*
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+    */
+    display: grid;
+    place-items: center; /* Centraliza vertical e horizontalmente */
+   /* height: 100vh; /* Ou outra altura */
+
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    max-width: 300px;
+    padding: 20px;
+    width: 100%;
+    transition: transform 0.3s;
+
+    cursor: pointer;
+
+}
+
+.card a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Herda a cor do elemento pai */
+}
+
+
+.card:hover {
+   /* transform: translateY(-10px);*/
+    transform: translateX(-10px);
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.card-description {
+    font-size: 1em;
+    margin: 0 0 10px;
+    color: #555;
+}
+
+.card-sub-description {
+    font-size: 0.9em;
+    margin: 0;
+    color: #777;
+    
+}
+
+/* dividir verticalmente */
+
+.container-div {
+    display: flex;
+    height: 100vh; /* Altura total da viewport */
+}
+.section-div {
+    flex: 1; /* Cada seção ocupa a mesma largura */
+    padding: 20px;
+    box-sizing: border-box;
+}
+.section-1 {
+    background-color: #f1f1f1;
+}
+.section-2 {
+    background-color: #f1f1f1;
+}
+
+
+/* Estilo básico para as abas */
+
+.tab {
+    overflow: hidden;
+    border-bottom: 1px solid #1659bf;
+}
+
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    border-radius: 1rem 0 1rem 0;
+    margin: .5rem;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #206fe6;
+    color: white;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    height: 90%;
+}
+.buttontab {
+    background-color: #206fe6;
+   color: white;
+    border: none;
+    outline: none;
+
+    padding: 14px 16px;
+    transition: 0.3s;
+    border-radius: 1rem 0;
+    margin: .5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.buttontab2 {
+    background-color: inherit;
+
+    border: none;
+    outline: none;
+  
+    padding: 14px 16px;
+    transition: 0.3s;
+
+}
+.linetab{
+    border-bottom: 1px solid #1659bf;
+
+}
+
+.margin-top{
+
+    margin-top: .5rem;
+}
